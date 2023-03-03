@@ -1,0 +1,6 @@
+import yfinance as yf
+
+def fetch_tesla_stock_price():
+    ticker = yf.Ticker("TSLA")
+    price = ticker.info["regularMarketPrice"]
+    return price
